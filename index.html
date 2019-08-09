@@ -15,35 +15,52 @@
 </head>
 
 <body>
-  <div class="container">
-    <header>
+  <div class="container-fluid ml-3 mr-5">
+    <header> 
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 mt-3">
           <h1>Marie Schubert</h1>
         </div>
-        <div class="col-12 col-md-6">
-        <a href="#contact">Kontakt</a>
+        <div class="col-12 d-none d-block d-md-none">
+        <a href="#contact" class="mr-2">Kontakt</a>
         <a href="#bio">Biografie</a>
         </div>
-      </div>
+        <div class="col-md-6 text-right d-none d-md-block mt-3">
+          <a href="#contact" class="mr-5">Kontakt</a>
+          <a href="#bio">Biografie</a>
+        </div>
+      </div> 
     </header>
 
     <main>
       <section>
         <div class="row">
           <div class="col-12 col-md-6">
-            <img src="/fuchs.jpg" alt="Ein Fuchs" class="img-fluid">
-            <h3>Trainee bei neue fische</h3>
+            <img src="/fuchs.jpg" alt="Ein Fuchs" class="img-fluid mt-3 mb-3">
+            <h2>Trainee bei neue fische</h2>
           </div>
-          <div class="col-12 col-md-6">
-            <div>Skills a</div>
-            <div>Skills b</div>
+          <div class="col-12 col-md-6 mt-3">
+            <h3>Skills a</h3>
+            <div class="row mb-3">
+              <div class="bg-primary m-2 p-2">HTML5</div>
+              <div class="bg-primary m-2 p-2">css3</div>
+              <div class="bg-primary m-2 p-2">Javascript</div>
+              <div class="bg-primary m-2 p-2">Bootstrap</div>
+              <div class="bg-primary m-2 p-2">HTML</div>
+            </div>
+            <h3>Skills b</h3>
+            <div class="row">
+              <div class="bg-primary m-2 p-2">Github</div>
+              <div class="bg-primary m-2 p-2">Shell</div>
+              <div class="bg-primary m-2 p-2">Scrum</div>
+              <div class="bg-primary m-2 p-2">HTML5</div>
+              <div class="bg-primary m-2 p-2">HTML5</div>
           </div>
         </div>
       </section> 
 
       <section>
-        <div class="row" id="contact" class="border border-primary rounded">
+        <div class="row border border-primary rounded m-5 p-3" id="contact">
           <div class="col-12 col-md-6">
           <a href="tel:+494012345">Telefon: 040 12345</a>
           </div>
@@ -53,14 +70,15 @@
         </div>
       </section>
 
-      <section>
-        <div class="row">
-          <div class="col-12 col-md-4">
+      <section class="text-center">
+        <h3>Finde mich auf:</h3>
+        <div class="row mb-5 mt-5">
+          <div class="col-12 col-md-4 mb-5">
             <a href="https://github.com/marwehl">
               <img src="/Logos/github-2.svg" alt="Github" style="width:100px; height:100px;" class="border border-primary rounded">
             </a>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 mb-5">
             <a href="https://codepen.io/dashboard/">
               <img src="/Logos/codepen-icon.svg" alt="Logo Codepen" style="width:100px; height:100px;" class="border border-primary rounded">
             </a>
@@ -76,13 +94,18 @@
       <section>
         <div class="row">
           <div class="col-12 col-md-6">
-            <h2>Header</h2>
-            <p>Text</p>
-            <p>Text</p>
+            <h2 class="text-center m-4">Header</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren.</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr.</p>
           </div>
-          <div class="col-12 col-md-6" id="bio">
-            <h2>Biografie</h2>
-            <table class="table">
+          <div class="col-12 mt-5 col-md-6" id="bio">
+            <h2 class="m-4 text-center">Biografie</h2>
+            <table class="table mr-3">
               
               <tbody>
                 <tr class="row">
@@ -109,9 +132,9 @@
 
     </main>
 
-    <footer>
-      <h3>Impressum</h3>
-
+    <footer class="m-5 text-center">
+      <h4>Impressum</h4>
+      <p>&copy; by Marie Schubert</p>
 
     </footer>
 
