@@ -15,76 +15,70 @@
 
 </head>
 
-<body>
-    <header> 
-      <h1>Marie Schubert</h1>
-      <nav>
-        <a href="#contact">Kontakt</a>
-        <a href="#bio">Biografie</a>
+<body class="container">
+    <header class="header"> 
+      <h1 class="headline--name">Marie Schubert</h1>
+      <nav class="nav">
+        <a href="#contact" class="nav__contact">Kontakt</a>
+        <a href="#bio" class="nav__bio">Biografie</a>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <div>
+    <main class="main">
+      <section class="first-section">
           <article>
-            <img src="/Bilder/Fuchs2.jpg" alt="Ein Fuchs" >
+            <img class="picture picture--profile" src="/Bilder/Fuchs2.jpg" alt="Ein Fuchs" >
             <h2>Trainee bei neue fische</h2>
           </article>
-          <article>
-            <h3>Programming Skills</h3>
-            <div>HTML5</div>
-              <div >CSS3</div>
-              <div >Javascript</div>            
-              <div >Bootstrap</div>
-              <div >React</div>
-            </div>
-            <h3 >Working Skills</h3>
-            <div >
-              <div >Github</div>
-              <div >Scrum</div>
-              <div >Teaching</div>
-              <div >Coaching</div>
-              
-          </div>
+          <article class="skills">
+            <h3 class="skills skills__heading">Programming Skills</h3>
+            <ul class="skills__list">
+              <li class="skills__list__item">HTML5</li>
+              <li class="skills__list__item">CSS3</li>
+              <li class="skills__list__item">Javascript</li>            
+              <li class="skills__list__item">Bootstrap</li>
+              <li class="skills__list__item">React</li>
+          </ul>
+            <h3 class="skills skills__heading">Working Skills</h3>
+            <ul class="skills__list">
+              <li class="skills__list__item">Github</li>
+              <li class="skills__list__item">Scrum</li>
+              <li class="skills__list__item">Teaching</li>
+              <li class="skills__list__item">Coaching</li>    
+            </ul>
         </article>
       </section> 
 
-      <section>
-        <article id="contact">
-          <div >
-          <a href="tel:+494012345"  >Telefon: 040 12345</a>
+      <section class="contact" id="contact">
+          <div class="contact--tel">
+          <a class="contact--tel" href="tel:+494012345"  >Telefon: 040 12345</a>
           </div>
-          <div >
-          <a href="mailto:Marie_S@gmx.de"  >Mail: Marie_S@gmx.de</a>
+          <div class="contact--mail">
+          <a class="contact--mail" href="mailto:Marie_S@gmx.de"  >Mail: Marie_S@gmx.de</a>
           </div>
-        </div>
       </section>
 
-      <section >
-        <h3>Finde mich auf:</h3>
-        
-          <article>
+      <section class="logos">
+          <article class="logos__item">
             <a href="https://github.com/marwehl" target="_blank">
               <figure >
-              <img src="/Logos/github-2.svg" alt="Github"  >
+              <img class="picture--social" src="/Logos/github-2.svg" alt="Github"  >
               <figcaption >Github</figcaption>
               </figure>
             </a>
           </article>
-          <article >
+          <article class="logos__item" >
             <a href="https://codepen.io/dashboard/" target="_blank">
               <figure >
-              <img src="/Logos/codepen-icon.svg" alt="Logo Codepen"  >
+              <img class="picture--social" src="/Logos/codepen-icon.svg" alt="Logo Codepen"  >
               <figcaption >Codepen</figcaption>
               </figure>
             </a>
-           
           </article>
-          <article>
+          <article class="logos__item">
             <a href="https://de.linkedin.com/" target="_blank">
-              <figure ></figure>
-              <img src="/Logos/linkedin.svg" alt="Logo LinkedIn"  >
+              <figure >
+              <img class="picture--social" src="/Logos/linkedin.svg" alt="Logo LinkedIn"  >
               <figcaption >LinkedIn</figcaption>
               </figure>
             </a>
@@ -92,10 +86,10 @@
           </article>
       </section>
 
-      <section>
+      <section class="second-section">
        
-          <article>
-            <h2>Über mich</div></h2>
+          <article class="second__one">
+            <h2 class="headline--übermich">Über mich</div></h2>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
             magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
             gubergren.</p>
@@ -105,27 +99,25 @@
             elitr.</p>
             </article>
          
-            <article id="bio">
-            <h2 >Vita</h2>
-            <table>
+            <article class="second__two" id="bio">
+            <h2 class="headline--vita">Vita</h2>
+            <table class="table">
               <tbody>
-                <tr>
-                  <td>2019</td>
-                  <td>Trainee bei neuefische</td>
+                <tr class="table__row">
+                  <td class="table__row__date">2019</td>
+                  <td class="table__row__station">Trainee bei neuefische</td>
                 </tr>
-                <tr>
-                  <td>2018</td>
-                  <td>Elbkinder GmbH, Ergotherapeutin</td>
+                <tr class="table__row">
+                  <td class="table__row__date">2018</td>
+                  <td class="table__row__station">Elbkinder GmbH, Ergotherapeutin</td>
                 </tr>
-                <tr>
-                  <td >2017</td>
-                  <td >Staatsexamen Ergotherapeutin</td>
+                <tr class="table__row">               
+                  <td class="table__row__date">2017</td>
+                  <td class="table__row__station">Staatsexamen Ergotherapeutin</td>
                 </tr>
-                <tr >
-                  <td >2014</td>
-                  <td >Bachelor of Arts, Deutsche und Spanische Philologie, Profil Gymnasiales Lehramt
-
-                  </td>
+                <tr class="table__row">
+                  <td class="table__row__date">2014</td>
+                  <td class="table__row__station">Bachelor of Arts, Deutsche und Spanische Philologie, Profil Gymnasiales Lehramt</td>
                 </tr>
               </tbody>
             </table>
@@ -134,7 +126,7 @@
 
     </main>
 
-    <footer >
+    <footer class="footer" >
       <h4>Impressum</h4>
       <p>&copy; by Marie Schubert</p>
 

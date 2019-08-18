@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.container {
+  padding: 0 20px 0 20px;
+  background-color: azure;
+}
+.header {
+  //grid-template-rows: 1/2;
+  background-color: aquamarine;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.main {
+  //grid-template-rows: 2/3;
+  background-color: aliceblue;
+}
+.footer {
+  //grid-template-rows: 3/4;
+  background-color: aquamarine;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+.first-section {
+  text-align: center;
+}
+.nav {
+  padding-bottom: 40px;
+  font-size: 20px;
+}
+.nav__contact {
+  padding-right: 20px;
+  text-decoration: none;
+}
+.nav__bio {
+  text-decoration: none;
+}
+.picture--profile {
+  width: 300px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 10%;
+}
+.skills {
+  margin-top: 40px;
+}
+.skills__list {
+  list-style: none;
+}
+.skills__list__item {
+  display: inline-block;
+  background-color: salmon;
+  padding: 5px;
+  margin: 3px;
+  border-radius: 10%;
+}
+.contact {
+  border: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  margin: 20px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact--tel {
+  margin-bottom: 25px;
+  text-decoration: none;
+}
+.contact--mail {
+  text-decoration: none;
+}
+
+.logos__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 70px;
+  border: 2px solid;
+}
+.picture--social {
+  width: 200px;
+  height: 200px;
+}
+figcaption {
+  text-align: center;
+  margin-top: 20px;
+}
+.headline--name{
+ padding-top: 40px;
+ font-family: 'Courier New', Courier, monospace;
+}
+.headline--vita {
+  text-align: center;
+  margin-top: 50px;
+}
+.headline--übermich {
+  text-align: center;
+}
+.table__row__date {
+  font-weight: bold;
+  padding-right: 7px;
+  padding-bottom: 20px;
+}
+.table__row__station {
+ padding-bottom: 20px;
+}
