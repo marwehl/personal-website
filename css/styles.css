@@ -88,9 +88,10 @@ body {
   width: 200px;
   height: 200px;
 }
-figcaption {
+.figcaption {
   text-align: center;
   margin-top: 20px;
+  text-decoration: none;
 }
 .headline--name{
  padding-top: 40px;
@@ -110,4 +111,71 @@ figcaption {
 }
 .table__row__station {
  padding-bottom: 20px;
+}
+
+@media (min-width: 700px) {
+  .first-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .picture--headline {
+    grid-column: 1;
+  }
+  .skills {
+    grid-column: 2/4;
+    margin-top: 20px;
+    font-size: 1.3rem;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .headline--name {
+    grid-column: 1;
+    padding: 20px;
+    font-size: 2em;
+  }
+  .nav {
+    grid-column: 3/4;
+    padding-top: 45px;
+    padding-right: 0px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    margin-top: 70px;
+    padding: 50px;
+  }
+  .contact--tel {
+    margin-bottom: 0;
+  }
+
+  .second-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  font-size: 1.1em;
+  }
+  .second__one {
+    margin-left: 60px;
+  }
+  .headline--vita {
+    margin-top: 0;
+  }
+  .headline--übermich {
+    margin-top: 0;
+  }
+ 
+}
+
+@media (min-width: 960px) {
+  .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+  }
 }
